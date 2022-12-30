@@ -1,0 +1,98 @@
+/* VARIABLES */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Overpass", sans-serif; }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121417;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem; }
+  section > .interactive-rating-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 410px;
+    height: 410px;
+    padding: 30px;
+    background: linear-gradient(180deg, #252d37 0%, #171e28 100%);
+    border-radius: 30px;
+    /* SUCCESS MODAL */ }
+    section > .interactive-rating-component > .star {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      margin-bottom: 20px;
+      background-color: #262f38;
+      padding: 20px;
+      border-radius: 10000vw; }
+    section > .interactive-rating-component > h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px; }
+    section > .interactive-rating-component > p {
+      color: #959eac;
+      line-height: 1.7;
+      margin-bottom: 20px; }
+    section > .interactive-rating-component input[type="button"] {
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: #262f38;
+      border-radius: 100vw;
+      color: #959eac; }
+      @media only screen and (min-width: 460px) {
+        section > .interactive-rating-component input[type="button"] {
+          width: 60px;
+          height: 60px; } }
+      section > .interactive-rating-component input[type="button"]:hover {
+        background-color: #959eac;
+        color: white; }
+      section > .interactive-rating-component input[type="button"]:focus {
+        background-color: #fb7413;
+        color: white; }
+    section > .interactive-rating-component > form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      section > .interactive-rating-component > form .ratings {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px; }
+      section > .interactive-rating-component > form #submit {
+        background-color: #fb7413;
+        border: none;
+        padding: 16px 0;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 3px;
+        border-radius: 100px; }
+        @media only screen and (min-width: 460px) {
+          section > .interactive-rating-component > form #submit {
+            padding: 12px 0; } }
+        section > .interactive-rating-component > form #submit:hover {
+          background-color: white;
+          color: #fb7413; }
+    section > .interactive-rating-component.-success {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      section > .interactive-rating-component.-success > .confirmation {
+        color: #fb7413;
+        background-color: #262f38;
+        padding: 3px 15px;
+        border-radius: 50px;
+        margin-bottom: 40px; }
+      section > .interactive-rating-component.-success > img {
+        margin-bottom: 30px; }
+      section > .interactive-rating-component.-success > h1 {
+        margin-bottom: 10px; }
+      section > .interactive-rating-component.-success > p {
+        margin: 0; }
